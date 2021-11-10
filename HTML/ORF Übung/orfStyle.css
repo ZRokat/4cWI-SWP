@@ -1,0 +1,321 @@
+*{
+    --leftSpace: 25px;
+    --nav-text: 0.9rem;
+    --logo-text: 1.7rem;
+    --headerPadding: 30px;
+    --nav2-text: 1rem;
+    --Megatitel-Size: 2.1rem;
+
+}
+.allWrap{
+    display: flex;
+}
+
+.wrap{
+    position: static;
+    width: 875px;
+}
+
+
+.leftSideBar{
+    background-color: rgb(184, 180, 180);
+    min-width: 20px;
+    width: 140px;
+    height: 100vw;
+}
+
+.rightSideBar{
+    background-color: rgb(184, 180, 180);
+    min-width: 10%;
+    width: 900px;
+    height: 100vw;
+}
+
+.upper {
+font-family: "ORF ON",Arial,Helvetica,Lucida Sans Unicode,Lucida Grande,sans-serif;
+font-feature-settings: "liga", "kern";
+width: 100%;
+
+}
+.nav{
+    position: relative;
+    width: 100%;
+    background-color: rgb(155, 15, 15);
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--nav-text);
+    font-weight: normal;
+}
+
+.nav2{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--nav2-text) ;
+    height: 25px;
+    background-color: rgb(117, 22, 22);
+
+}
+
+.content2{
+    width: 90%;
+}
+
+.bell{
+    margin-right: 20px;
+    right: 0px;
+}
+
+.Überblick{
+    position: absolute;
+    right: 0px;
+   margin-right: 20px;
+
+}
+
+    .content{
+        width: 80%;    
+    }
+
+        ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        li{
+            margin-right: 10px;
+            margin-left: 20px;
+        }
+
+.header{
+    height: 90px;
+    background-color: rgb(187, 33, 33);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: var(--headerPadding);
+    padding-right: var(--headerPadding)
+}
+
+.Background{
+    margin-top: 10px;
+    height: 350px;
+    width: 100vmax;
+    background-image: url(orf_b1.jpg);
+    background-size: contain;
+  
+
+}
+
+.Text{
+    top:460px;
+    position:absolute;
+    align-self: center;
+    justify-self: center;
+    background-color: rgb(255, 255, 255);
+    width: 660px;
+    height: 900px;
+    padding: 30px;
+
+
+}
+
+.Titel{
+    color: rgb(182, 178, 178);
+    font-size: var(--nav2-text);
+    font-weight: bold;
+}
+
+.MegaTitel{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: var(--Megatitel-Size);
+    font-weight: bold;
+}
+
+.story{
+    line-height: 2rem;
+}
+
+.lower{
+    font-family: "ORF ON",Arial,Helvetica,Lucida Sans Unicode,Lucida Grande,sans-serif;
+    font-feature-settings: "liga", "kern";
+    justify-content: center;
+    display: flex;
+}
+
+.logo{
+    color: white;
+    font-size: var(--logo-text) ;
+
+}
+
+
+.logo a{
+    display: flex;
+    align-items: center;
+}
+
+.logo a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+a{
+    color: white;
+}
+
+a:link{
+    text-decoration: none;
+    
+}
+
+a:hover{
+    color: rgb(189, 188, 188);
+    text-decoration: underline;
+}
+
+.b a{
+    color:rgb(189, 188, 188) ;
+}
+
+@media (min-width: 700px){
+
+    *{
+        --leftSpace: 25px;
+        --nav-text: 0.9rem;
+        --logo-text: 1.7rem;
+        --headerPadding: 30px;
+        --nav2-text: 1rem;
+        --Megatitel-Size: 2.1rem;
+    
+    }
+    .allWrap{
+        display: flex;
+    }
+    
+    .wrap{
+        position: static;
+        width: 875px;
+    }
+    
+    .upper {
+    font-family: "ORF ON",Arial,Helvetica,Lucida Sans Unicode,Lucida Grande,sans-serif;
+    font-feature-settings: "liga", "kern";
+    width: 100%;
+    
+    }
+
+    
+    .bell{
+        margin-right: 20px;
+        right: 0px;
+    }
+    
+    .Überblick{
+        position: absolute;
+        right: 0px;
+       margin-right: 20px;
+    
+    }    
+    .header{
+        height: 90px;
+        background-color: rgb(187, 33, 33);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: var(--headerPadding);
+        padding-right: var(--headerPadding)
+    }
+    
+    .Background{
+        margin-top: 10px;
+        height: 350px;
+        width: 100vmax;
+        background-image: url(orf_b1.jpg);
+        background-size: contain;
+      
+    
+    }
+    
+    .Text{
+        top:460px;
+        position:absolute;
+        align-self: center;
+        justify-self: center;
+        background-color: rgb(255, 255, 255);
+        width: 660px;
+        height: 900px;
+        padding: 30px;
+    
+    
+    }
+    
+    .Titel{
+        color: rgb(182, 178, 178);
+        font-size: var(--nav2-text);
+        font-weight: bold;
+    }
+    
+    .MegaTitel{
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: var(--Megatitel-Size);
+        font-weight: bold;
+    }
+    
+    .story{
+        line-height: 2rem;
+    }
+    
+    .lower{
+        font-family: "ORF ON",Arial,Helvetica,Lucida Sans Unicode,Lucida Grande,sans-serif;
+        font-feature-settings: "liga", "kern";
+        justify-content: center;
+        display: flex;
+    }
+    
+    .logo{
+        color: white;
+        font-size: var(--logo-text) ;
+    
+    }
+    
+    
+    .logo a{
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo a:hover{
+        color: white;
+        text-decoration: none;
+    }
+    
+    
+    
+    a{
+        color: white;
+    }
+    
+    a:link{
+        text-decoration: none;
+        
+    }
+    
+    a:hover{
+        color: rgb(189, 188, 188);
+        text-decoration: underline;
+    }
+    
+    .b a{
+        color:rgb(189, 188, 188) ;
+    }
+
+}

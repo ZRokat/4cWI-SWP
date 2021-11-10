@@ -1,0 +1,58 @@
+.god{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 250px;
+    background-color: yellow;
+}
+
+.group{
+    display: flex;
+    position:absolute;
+    align-self: center;
+    right: 100px;
+}
+
+.box{
+    height: 50px;
+    width: 50px;
+    margin-right: 20px;
+    background-color: green;
+}
+
+.overview{
+    position: relative;
+    padding-left: 20px;
+    padding-top: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    height: 300px;
+    width: 400px;
+    background-color: turquoise;
+}
+
+.overview h1{
+    font-size: 50px;
+}
+
+.overview li{
+    font-size: 30px;
+}
+
+.brownBox{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    height: 100px;
+    width: 100px;
+    background-color: brown;
+}
+
+.purpleBox{
+    position:absolute;
+    height: 100px;
+    width: 100px;
+    right: 0px;
+    bottom: 0px;
+    background-color: purple;
+}
