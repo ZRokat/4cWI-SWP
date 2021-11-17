@@ -34,8 +34,8 @@ function startCalendar() {
 }
 
 function previousMonth(){
-        if (month != 11){
-            month ++;   
+        if (month != 0){
+            month --;   
         }
         document.getElementById("month").innerHTML = months[month];
         while (offset > 0){
