@@ -38,6 +38,7 @@ function generateRandomNumber(maxNum){
 }
 
 
+
 var num1 = generateRandomNumber(100);
 var num2 = generateRandomNumber(100);
 
@@ -92,11 +93,160 @@ for(let x = 0; x <=3; x++){
     binary++;
     document.write("<br>");
 }
+writeBR();
 
 var summe = 0;
 for(let x = 0; x <=100; x++){
     if (x % 2 == 0){
         summe += x;
     }
-    console.log(summe)
+    console.log(summe);
 }
+
+
+function writeX(){
+    document.write("X");
+}
+
+function writeBR(){
+    document.write("<br>");
+}
+
+function writeSpace(){
+    document.writeln("&ensp;");
+}
+
+function printE(){
+    for (let x = 0; x<= 5; x++){
+        switch(x){
+            case 0: 
+                for(let y = 0; y <= 4; y++){
+                    writeX();
+                }
+                writeBR();
+                break;
+            
+            case 1:
+                writeX();
+                writeBR();
+                break;
+            case 2:
+                for(let y = 0; y <= 4; y++){
+                    writeX();
+                }    
+                writeBR();
+                break;
+            case 3:
+                writeX();
+                writeBR();
+                break;
+            case 4:
+                for (let y = 0; y<= 4; y++){
+                    writeX();
+                }    
+                writeBR();
+                break;
+                    
+        }
+    }
+    writeBR();
+}
+
+function printR(){
+    for (let x = 0; x<= 5; x++){
+        switch(x){
+            case 0: 
+                for(let y = 0; y <= 4; y++){
+                    writeX();
+                }
+                writeBR();
+                break;
+            
+            case 1:
+                for(let y = 0; y <= 4; y++){
+                    if (y == 0 || y == 4){
+                        writeX();
+                    } else {
+                        writeSpace();
+                    }
+                }
+                writeBR();
+                break;
+            case 2:
+                for(let y = 0; y <= 3; y++){
+                    writeX();
+                }    
+                writeBR();
+                break;
+            case 3:
+                for(let y = 0; y <= 4; y++){
+                    if (y == 0 || y == 3){
+                        writeX();
+                    } else {
+                        writeSpace();
+                    }
+                    
+                }
+                writeBR();
+                break;
+            case 4:
+                for (let y = 0; y<= 4; y++){
+                    if (y == 0 || y == 4){
+                        writeX();
+                    } else {
+                        writeSpace();
+                    }
+                }    
+                writeBR();
+                break;
+                    
+        }
+    }
+    writeBR();
+}
+
+
+function printI(){
+    for (let x = 0; x<= 4; x++){
+        writeX();
+        writeBR();
+    }
+    writeBR();
+}
+
+function printC(){
+    for (let x = 0; x<= 4; x++){
+        switch(x){
+            case 0:
+                for (let y = 0; y <=4; y++){
+                    writeX();
+                }
+                writeBR();
+                break;
+            case 1:
+                writeX();
+                writeBR();    
+                break;
+            case 2:
+                writeX();
+                writeBR();
+                break;
+            case 3:
+                writeX();
+                writeBR();
+                break;
+            case 4:
+                for (let y = 0; y <=4; y++){
+                    writeX();
+                }
+                writeBR();
+                writeBR();
+                break;            
+        }
+    }
+}
+
+printE();
+printR();
+printI();
+printC();

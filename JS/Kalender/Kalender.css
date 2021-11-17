@@ -1,0 +1,22 @@
+table {
+    border-style: solid;
+    padding: 0px;
+    width: 700px;
+}
+
+th {
+    border-style: solid;
+    padding: 0px;
+    height: 30px;
+
+}
+
+.day {
+    width: 100px;
+    height: 50px;
+}
+
+.month {
+    width: 700px ;
+    height: 50px;
+}
