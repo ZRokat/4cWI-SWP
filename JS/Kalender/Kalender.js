@@ -1,12 +1,11 @@
 var month = 0
 var id = 1;
 var idString = id.toString();
-var offset = 1;
-var days = 31;
+var days = 30;
 const months = ["Januar","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Detember"]
+var nextOffSet = 0;
 
-
-function startCalendar() {
+function startCalendar(offset) {
     document.getElementById("month").innerHTML = months[month];
     while (offset > 0){
         document.getElementById(idString).innerHTML = "-";
@@ -21,10 +20,13 @@ function startCalendar() {
     }
     while (id <= 42){
         if (id <= 35){
-            offset++;
+            nextOffSet = offset + 1;
+            console.log(nextOffSet)
+            
         }
         if (id > 35 && id < 42){
-            offset++;
+            nextOffSet= offset + 1;
+            console.log(nextOffSet)            
         }
         document.getElementById(idString).innerHTML = "-";
         id++;
@@ -65,6 +67,9 @@ function previousMonth(){
 
 
 function nextMonth(){
+    offset = nextOffSet;
+    id = 1;
+    idString = id.toString();
     if (month != 11){
         month ++;   
     }
@@ -94,4 +99,4 @@ function nextMonth(){
     }
 }
 
-startCalendar();
+startCalendar(2);
