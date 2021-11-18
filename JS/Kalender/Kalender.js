@@ -62,7 +62,9 @@ function previousMonth(){
 
 
 function nextMonth(){
+    let offsetAlreadySet = false;
     offset = nextOffset;
+    nextOffset = 0;
     id = 1;
     idString = id.toString();
     if (month != 11){
@@ -83,9 +85,12 @@ function nextMonth(){
     while (id <= 42){
         if (id <= 35){
             nextOffset++;
+            console.log(nextOffset);
+            offsetAlreadySet = true;
         }
-        if (id > 35 && id < 42){
+        if (offsetAlreadySet == false){
             nextOffset++;
+            console.log(nextOffset);
         }
         document.getElementById(idString).innerHTML = "-";
         id++;
