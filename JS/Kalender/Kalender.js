@@ -2,7 +2,7 @@ var id = 1;
 var idString = id.toString();
 var monthId = 0;
 const months = [
-    {"name": "Januar", "days": 31},
+    {"name": "Januar", "days": 31}, 
     {"name": "Februar", "days": 28},
     {"name": "März", "days": 31},
     {"name": "April", "days": 30},
@@ -15,9 +15,12 @@ const months = [
     {"name": "November", "days": 30},
     {"name": "Dezember", "days": 31},
     ]
+
+const lastOffsetArray = []
 var offset = 4;
 var nextOffset = 0;
 var lastOffset = 0;
+var savedLastOffset = 0
 
 function nextDay() {
     id++;
@@ -30,7 +33,9 @@ function startCalendar() {
         document.getElementById(idString).innerHTML = "-";
         offset--;
         lastOffset++;
+        lastOffsetArray.push(lastOffset);
         nextDay();
+        console.log(lastOffset + "Last")
     }
     for (let trueDays = 1; trueDays <= months[0].days; trueDays++){
     document.getElementById(idString).innerHTML = trueDays;
@@ -46,11 +51,12 @@ function startCalendar() {
     }
 }
 
+
 function previousMonth(){
     if (monthId != 0){
         monthId--;   
     let offsetAlreadySet = false;
-    offset = lastOffset;
+    offset = lastOffsetArray[monthId];
     lastOffset = 0;
     nextOffset = 0;
     id = 1;
@@ -60,6 +66,7 @@ function previousMonth(){
         document.getElementById(idString).innerHTML = "-";
         offset--;
         lastOffset++;
+        console.log(lastOffset + "Last")
         nextDay();
     }
     for (let trueDays = 1; trueDays <= months[monthId].days; trueDays++){
@@ -87,6 +94,7 @@ function nextMonth(){
         monthId++;  
     let offsetAlreadySet = false;
     offset = nextOffset;
+    lastOffset = 0;
     nextOffset = 0;
     id = 1;
     idString = id.toString();
@@ -96,6 +104,9 @@ function nextMonth(){
         document.getElementById(idString).innerHTML = "-";
         offset--;
         lastOffset++;
+        if (lastOffsetArray[monthId] )
+        console.log(savedLastOffset + "saved")
+        console.log(lastOffset + "Last")
         nextDay();
     }
     for (let trueDays = 1; trueDays <= months[monthId].days; trueDays++){
