@@ -33,10 +33,10 @@ function startCalendar() {
         document.getElementById(idString).innerHTML = "-";
         offset--;
         lastOffset++;
-        lastOffsetArray.push(lastOffset);
         nextDay();
         console.log(lastOffset + "Last")
     }
+    lastOffsetArray.push(lastOffset);
     for (let trueDays = 1; trueDays <= months[0].days; trueDays++){
     document.getElementById(idString).innerHTML = trueDays;
     nextDay();
@@ -65,7 +65,6 @@ function previousMonth(){
     while (offset > 0){
         document.getElementById(idString).innerHTML = "-";
         offset--;
-        lastOffset++;
         console.log(lastOffset + "Last")
         nextDay();
     }
@@ -104,11 +103,11 @@ function nextMonth(){
         document.getElementById(idString).innerHTML = "-";
         offset--;
         lastOffset++;
-        if (lastOffsetArray[monthId] )
         console.log(savedLastOffset + "saved")
         console.log(lastOffset + "Last")
         nextDay();
     }
+    lastOffsetArray.push(lastOffset);
     for (let trueDays = 1; trueDays <= months[monthId].days; trueDays++){
     document.getElementById(idString).innerHTML = trueDays;
     nextDay();
