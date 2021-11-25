@@ -74,15 +74,17 @@ function previousMonth(){
     }
     while (id <= 42){
         if (id <= 35){
-            
+            nextOffset++;
             console.log(nextOffset);
             offsetAlreadySet = true;
         }
         if (offsetAlreadySet == false){
+            nextOffset++;
             console.log(nextOffset);
         }
         document.getElementById(idString).innerHTML = "-";
-        nextDay();        
+        nextDay();
+        
     }
     }
 }
