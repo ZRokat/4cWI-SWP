@@ -27,12 +27,23 @@ function nextDay() {
     idString = id.toString();
 }
 
+function reduceOffsetSavelastOffset (){
+    offset--;
+    lastOffset++;
+}
+
+function resetOffsetsAndId(){
+    lastOffset = 0;
+    nextOffset = 0;
+    id = 1;
+    idString = id.toString();
+}
+
 function startCalendar() {
     document.getElementById("month").innerHTML = months[monthId].name;
     while (offset > 0){
         document.getElementById(idString).innerHTML = "-";
-        offset--;
-        lastOffset++;
+        reduceOffsetSavelastOffset();
         nextDay();
         console.log(lastOffset + "Last")
     }
@@ -57,10 +68,7 @@ function previousMonth(){
         monthId--;   
     let offsetAlreadySet = false;
     offset = lastOffsetArray[monthId];
-    lastOffset = 0;
-    nextOffset = 0;
-    id = 1;
-    idString = id.toString();
+    resetOffsetsAndId();
     document.getElementById("month").innerHTML = months[monthId].name;
     while (offset > 0){
         document.getElementById(idString).innerHTML = "-";
@@ -95,16 +103,11 @@ function nextMonth(){
         monthId++;  
     let offsetAlreadySet = false;
     offset = nextOffset;
-    lastOffset = 0;
-    nextOffset = 0;
-    id = 1;
-    idString = id.toString();
-    
+    resetOffsetsAndId();
     document.getElementById("month").innerHTML = months[monthId].name;
     while (offset > 0){
         document.getElementById(idString).innerHTML = "-";
-        offset--;
-        lastOffset++;
+        reduceOffsetSavelastOffset();
         console.log(savedLastOffset + "saved")
         console.log(lastOffset + "Last")
         nextDay();
