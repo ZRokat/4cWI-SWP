@@ -1,3 +1,7 @@
+var task = {name: "Duschen", isDone: false, responsible: "Ben"}
+
+
+
 const tasks = ["putzen","tanzen","kochen"];
 
 printTaskList();
