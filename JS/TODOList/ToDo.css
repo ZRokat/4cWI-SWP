@@ -2,6 +2,10 @@ body {
     background-color: green;
 }
 
-.wrapper{
-    
+h1{
+    font-size: 100px;
+}
+
+.wrapper{    
+    text-align: center;
 }
