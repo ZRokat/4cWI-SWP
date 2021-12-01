@@ -17,7 +17,7 @@ const months = [
     ]
 
 const lastOffsetArray = []
-var offset = 4;
+var offset = 1;
 var nextOffset = 0;
 var lastOffset = 0;
 var savedLastOffset = 0
