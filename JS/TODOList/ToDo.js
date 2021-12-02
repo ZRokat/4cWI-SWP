@@ -21,7 +21,7 @@ function printTaskList(){
 function getHTMLTasks(){
     let html = "";
     tasks.forEach(element => {
-        html += "<li>" + element.name + "-" + element.responsible + "-" + element.isDone + "</li>"   
+        html += "<li>" + element.name + "-" + element.responsible + " " + "<input type='checkbox'/>"+ "</li>"   
     });
     return html;  
 }
