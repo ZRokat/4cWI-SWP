@@ -1,14 +1,15 @@
-var task = {name: "Duschen", isDone: false, responsible: "Ben"}
+var task = {name: "Duschen", responsible: "Ben", isDone: false}
 
 
 
-const tasks = ["putzen","tanzen","kochen"];
+const tasks = [task];
 
 printTaskList();
 
 document.getElementById("Addtask").addEventListener("click",function(){
-    let newTask = document.getElementById("newTask").value;
-    console.log(newTask)
+    let taskName = document.getElementById("newTask").value;
+    let taskResponsible = document.getElementById("newResponsibel").value;
+    let newTask = {name:taskName, responsible: taskResponsible, isDone: false};
     tasks.push(newTask);
     printTaskList();
 });
@@ -20,7 +21,7 @@ function printTaskList(){
 function getHTMLTasks(){
     let html = "";
     tasks.forEach(element => {
-        html += "<li>" + element + "</li>"   
+        html += "<li>" + element.name + "-" + element.responsible + "-" + element.isDone + "</li>"   
     });
     return html;  
 }
