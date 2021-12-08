@@ -1,8 +1,4 @@
-var task = {name: "Duschen", responsible: "Ben", isDone: false}
-
-
-
-const tasks = [task];
+const tasks = [];
 
 printTaskList();
 
@@ -19,9 +15,12 @@ function printTaskList(){
 }
 
 function getHTMLTasks(){
+    let index = 0;
     let html = "";
+
     tasks.forEach(element => {
-        html += "<li>" + element.name + "-" + element.responsible + " " + "<input type='checkbox'/>"+ "</li>"   
+        html += "<li>" + element.name + "-" + element.responsible + " " + "<input type='checkbox' data-index='"+ index +"' />"+ "</li>"   
+        index ++;
     });
     return html;  
 }
