@@ -1,13 +1,21 @@
+const conversions = [
+    {"conversion": 1.13},
+    {"conversion": 1}
+]
+
 function calculateCrncy(){
-    let originMoney = document.getElementById("givenNumber").value
-    let givenCrncy = document.getElementById("givenCurrency").value
-    let chosenCrncy = document.getElementById("chosenCurrency").value
-    let displayMoney = 0
+    var originMoney = document.getElementById("givenNumber").value
+    var givenCrncy = conversions[document.getElementById("givenCurrency").value]
+    var chosenCrncy = conversions[document.getElementById("chosenCurrency").value]
+    var displayMoney = 0
     if (givenCrncy == chosenCrncy){
         displayMoney = originMoney
     }
+    
+    displayMoney = Math.floor(givenCrncy.conversion * originMoney);
 
     document.getElementById("output").innerHTML = displayMoney;
+    
 
 
 }
