@@ -12,14 +12,20 @@
 <body>
     <div class="wrapper">
         <div class="givencrncy">
-            <input type="number" id="givenNumver" placeholder="much Money?">
-            <select name="currency" id="currency">
-                <option value="euro">€</option>
-                <option value="dollar">$</option>
+            <input type="number" id="givenNumber" placeholder="much Money?">
+            <select name="currency" id="givenCurrency">
+                <option value="1">€</option>
+                <option value="2">$</option>
             </select>
             <button type="button" onclick="calculateCrncy()"> Calculate </button>
         </div>
-        <div class="wantedcrncy">dd</div>
+        <div class="wantedcrncy">
+            <output id="output"></output>
+        <select name="currency" id="chosenCurrency">
+            <option value="1">€</option>
+            <option value="2">$</option>
+        </select>
+        </div>
     </div>
 </body>
 </html>
