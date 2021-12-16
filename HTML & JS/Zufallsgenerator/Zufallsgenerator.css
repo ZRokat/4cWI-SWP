@@ -1,0 +1,27 @@
+.wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 800px;
+    width: 800px;
+    background-color: green;
+}
+
+.numbers{
+    height: 200px ;
+    width: 700px;
+    background-color: blue;
+}
+
+.generate{
+    height: 200px;
+    width: 700px;
+    background-color: red;
+}
+
+.display{
+    height: 200px;
+    width: 700px;
+    background-color: orange;
+}
