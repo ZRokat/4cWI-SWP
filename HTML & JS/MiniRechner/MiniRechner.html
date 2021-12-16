@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../HTML/cssReset.css">
+    <link rel="stylesheet" href="MiniRechner.css">
+    <script src="MiniRechner.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Mini Rechner</h1>
+    <div class="rechner">
+        <input type="number" id="number1" placeholder="A"/>
+        <select id="operator">
+            <option value="0">+</option>
+            <option value="1">-</option>
+            <option value="2">*</option>
+            <option value="3">/</option>
+        </select>
+        <input type="number" id="number2" placeholder="B"/>
+        <button type="button" onclick="calculate()">calculate</button>
+    </div>
+</body>
+</html>
