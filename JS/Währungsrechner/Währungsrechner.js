@@ -1,6 +1,7 @@
 const conversions = [
     {"conversion": 1.13},
-    {"conversion": 1}
+    {"conversion": 1},
+    {"conversion":1.33}
 ]
 
 function calculateCrncy(){
@@ -12,7 +13,7 @@ function calculateCrncy(){
         displayMoney = originMoney
     }
     
-    displayMoney = Math.floor(givenCrncy.conversion * originMoney);
+    displayMoney = Math.round((givenCrncy.conversion * originMoney)*100)/100;
 
     document.getElementById("output").innerHTML = displayMoney;
     
