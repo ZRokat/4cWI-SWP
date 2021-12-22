@@ -13,11 +13,19 @@
     <div class="wrap">
         <h1>Random Number Generator</h1>
         <div class="numbers">
-            <div id="firstNum"></div>
-            <div id="secondNum"></div>
+            <div id="firstNum"> 
+            <input type="number" placeholder="number" id="firstNumber" min="1"max="1000"/>
+            </div>
+            <div id="secondNum">
+                <input type="number" placeholder="number" id="secondNumber" min="1" max="1000"/>
+            </div>
         </div>
-        <div class="generate"></div>
-        <div class="display"></div>
+        <div class="generate">
+            <button type="button" onclick="generate()">Generate</button>
+        </div>
+        <div class="display">
+            <output > Output</output>
+        </div>
     </div>
 </body>
 </html>
