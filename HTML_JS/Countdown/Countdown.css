@@ -35,3 +35,8 @@ input{
 #output{
     font-size: 100px;
 }
+
+button{
+    background-color: transparent;
+    padding: 0px;
+}
