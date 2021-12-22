@@ -5,7 +5,11 @@
     align-items: center;
     height: 800px;
     width: 800px;
-    background-color: green;
+    background-color: rgb(212, 209, 209);
+}
+
+h1{
+    font-size: 50px;
 }
 
 .numbers{
@@ -14,7 +18,9 @@
     align-items: center;
     height: 200px ;
     width: 700px;
-    background-color: blue;
+    background-color: rgb(146, 145, 145);
+    border-style: solid;
+    border-width: 2px;
 }
 
 #firstNum{
@@ -37,24 +43,27 @@ input{
 }
 
 .generate{
+    border-style: solid;
+    border-width: 2px;
     display: flex;
     justify-content: center;
     height: 200px;
     width: 700px;
-    background-color: red;
 }
 
 button{
     width: 700px;
     font-size: 100px;
-    background-color: tomato;
+    background-color: rgb(146, 145, 145);
 }
 
 .display{
+    border-style: solid;
+    border-width: 2px;
     display: flex;
     height: 200px;
     width: 700px;
-    background-color: orange;
+    background-color: rgb(146, 145, 145);
     justify-content: center;
     align-items: center;
 }
