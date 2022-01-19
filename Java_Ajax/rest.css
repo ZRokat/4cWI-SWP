@@ -1,0 +1,49 @@
+*{
+    font-family: 'Bebas Neue', cursive;
+}
+
+.wrap{
+    width: 100vw;
+    height: 100vh;
+    background-color: greenyellow;
+    font-family: 'Bebas Neue', cursive;
+}
+
+
+.top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+
+}
+button{
+    height: 50px;
+    width: 100px;
+    margin-right: 5px;
+    border-style: none;
+    background-color: orange;
+    color: white;    
+    
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: red;
+}
+
+.bot {
+    padding: 15px;
+}
+
+.bot li {
+    background-color: brown;
+    padding: 50px;
+    margin-bottom: 1px;
+    color: white;
+}
+
+.bot li:hover{
+    cursor: pointer;
+    background-color: blue;
+}
