@@ -9,17 +9,17 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="rest.css">
-    <script src="rest.js"></script>
+    <script src="rest.js" defer></script>
     <title>Document</title>
 </head>
 <body>
     <div class="wrap">
         <div class="top">
-            <button type="button" onclick="loadUser()">Lade User</button>
-            <button type="button" onclick="loadTodos()">Lade Todos</button>
+            <button type="button"  id="loadUser">Lade User</button>
+            <button type="button"  id="loadTodos">Lade Todos</button>
         </div>
         <div class="bot">
-            <ul>
+            <ul id="list">
                 <li> Aufgabe 1</li>
                 <li> Aufgabe 2</li>
             </ul>
