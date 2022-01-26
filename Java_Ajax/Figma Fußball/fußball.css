@@ -1,0 +1,53 @@
+.wrap{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(https://populous.com/wp-content/uploads/2018/01/Tottenham-hotspur-stadium-hero-1504x846.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation{
+    position: absolute;
+    top: 50px;
+    left: 50%;
+}
+
+.navigation2{
+    display: flex;
+    position: relative;
+    width: 1300px;
+    height: 130px;
+    left: -50%;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #116204;
+}
+
+button{
+    height: 90px;
+    width: 200px;
+    border-style: none;
+    border-style: solid;
+    border-color: green;
+    background-color: rgba(52, 149, 6, 1);
+}
+
+button:hover{
+    background-color: rgb(47, 138, 4) ;
+}
+
+.text{
+    margin-top: 100px;
+    height: 830px;
+    width: 1000px;
+    background-color: white;
+}
+
+.actuallText{
+    margin-top: 100px;
+}
+h1{
+    font-size: 50px;
+}
