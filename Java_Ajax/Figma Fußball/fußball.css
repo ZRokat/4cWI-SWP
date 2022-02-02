@@ -26,6 +26,8 @@
 }
 
 button{
+    font-size: 30px;
+    color: white;
     height: 90px;
     width: 200px;
     border-style: none;
