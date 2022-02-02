@@ -11,5 +11,5 @@ function start(){
                 clearInterval(timer);
                 }   
             },1000);
-
+            
 }
