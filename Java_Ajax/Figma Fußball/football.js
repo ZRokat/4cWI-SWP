@@ -1,4 +1,4 @@
-let urlPlayer = "http://api.football-data.org/v2/players/44"
+let urlPlayer = "https://api.football-data.org/v2/teams/"
 
 function loadTeams(){
     let urlTeams = "http://api.football-data.org/v2/competitions/2002/teams"
@@ -11,14 +11,17 @@ fetch(urlTeams, {
     .then(response => response.json())
     .then(function (data) {
         let html = "";
+        let i = 1;
         data.teams.forEach(element => {
-            html += "<li> <button class='teamsButton' type='button' onclick='loadPlayers();'>" + element.name + "</button></li>";
+            html += "<li id='"+i+"'> <button class='teamsButton' type='button' onclick='loadPlayers("+i+")'>" + element.name + "</button></li>";
+        i++;
         });
         document.getElementById("teams").innerHTML = html
     });
 }
 
 function loadPlayers(teamId){
+    alert("i Workd")
     fetch(urlPlayer + teamId,{
         headers:{
             "X-Auth-Token":"01b439ba1f9e45c79423f4f92b5087d5"
@@ -32,6 +35,10 @@ function loadPlayers(teamId){
             html += "<li>" + player.name + "</li>";
     
           });
-          document.getElementById("players").innerHTML = html
+          document.getElementById("teams").innerHTML = html
     });
+}
+
+function test(text){
+    alert("hei "+ text)
 }
