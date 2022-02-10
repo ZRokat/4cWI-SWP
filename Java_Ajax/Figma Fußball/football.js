@@ -21,7 +21,6 @@ fetch(urlTeams, {
 }
 
 function loadPlayers(teamId){
-    alert("i Workd")
     fetch(urlPlayer + teamId,{
         headers:{
             "X-Auth-Token":"01b439ba1f9e45c79423f4f92b5087d5"
@@ -32,7 +31,7 @@ function loadPlayers(teamId){
     .then(function (data) {
         let html = "";
         data.squad.forEach(player => {
-            html += "<li>" + player.name + "</li>";
+            html += "<li class='players'>" + player.name + "</li>";
     
           });
           document.getElementById("teams").innerHTML = html
