@@ -1,7 +1,8 @@
 let urlPlayer = "https://api.football-data.org/v2/teams/"
+let urlTeams = "http://api.football-data.org/v2/competitions/2002/teams"
+
 
 function loadTeams(){
-    let urlTeams = "http://api.football-data.org/v2/competitions/2002/teams"
 fetch(urlTeams, {
     headers: {
         "X-Auth-Token": "01b439ba1f9e45c79423f4f92b5087d5"
@@ -40,4 +41,8 @@ function loadPlayers(teamId){
 
 function test(text){
     alert("hei "+ text)
+}
+
+function loadEvents(){
+    fetch()
 }
