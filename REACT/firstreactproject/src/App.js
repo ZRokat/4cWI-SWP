@@ -3,6 +3,8 @@ import './App.css';
 import SuperButton from './Components/superbutton';
 import ButtonRow from './Components/ButtonRow';
 import List from './Components/List';
+import UserCard from './Components/userCard';
+import  Vote  from './Components/Vote';
 
 function App() {
   return (
@@ -11,6 +13,10 @@ function App() {
         <SuperButton/>
         <ButtonRow/>
         <List/>
+        <UserCard/>
+        <Vote candidate="sepp" nickname="S"/>
+        <Vote candidate="paul" nickname="Po"/>
+        <Vote candidate="Hans" nickname="Flammenwerfer"/>
     </div>
   );
 }

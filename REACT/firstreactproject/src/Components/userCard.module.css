@@ -1,0 +1,56 @@
+
+*{
+    --picWidth: 300px;
+    --picHeight: 300px;
+    --margin: 15px;
+}
+
+.Wrap{
+    border-style: ridge;
+    border-width: 5px;
+    border-color: grey;
+    width: 300px;
+    height: 400px;
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Pic{
+    width: var(--picWidth);
+    height: var(--picHeight);
+    background-image: url("D:\HTL Dornbirn\4cWI 2021-2022\SWP\REACT\firstreactproject\src\Components\Pic\AKBB3321.JPG");
+    background-size: var(--picWidth) var(--picHeight);
+
+}
+
+.Info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 300px;
+    height: 100px;
+    background-color: rgb(124, 69, 18);
+    color:white;
+    
+}
+
+.Name{
+    display: flex;
+    align-items: center;
+    height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: var(--margin);
+
+}
+
+.Job{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    font-size: 15px;
+    margin-left: var(--margin);
+}
