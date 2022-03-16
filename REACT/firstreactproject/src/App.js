@@ -14,9 +14,11 @@ function App() {
         <ButtonRow/>
         <List/>
         <UserCard/>
+        <div className="voteContainer">
         <Vote candidate="sepp" nickname="S"/>
         <Vote candidate="paul" nickname="Po"/>
         <Vote candidate="Hans" nickname="Flammenwerfer"/>
+        </div>
     </div>
   );
 }
