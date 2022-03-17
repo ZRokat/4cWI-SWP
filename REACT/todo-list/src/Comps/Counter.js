@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import styles from './Counter.module.css';
 
 export default class Counter extends Component {
     constructor(props){
@@ -9,7 +10,8 @@ export default class Counter extends Component {
     render() {
         return(
             <div>
-                <p>{this.state.counter}</p>
+                <h1 className={styles.h1}>Count</h1>
+                <p SclassName={styles.p}>{this.state.count}</p>
             </div>
 
         );
