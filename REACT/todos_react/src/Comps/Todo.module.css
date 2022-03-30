@@ -7,3 +7,7 @@
     -webkit-box-shadow: 0px 0px 15px 3px rgba(171,68,31,0.88); 
     box-shadow: 0px 0px 15px 3px rgba(171,68,31,0.88);
 }
+
+.icon{
+    font-size: 20px;
+}

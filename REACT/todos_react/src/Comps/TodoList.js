@@ -3,15 +3,20 @@ import Todo from './Todo';
 import styles from './TodoList.module.css';
 
 class TodoList extends Component {
-    state = {  } 
+    
+    getAllTodos(){
+        let widgets = [];
+        this.props.todos.forEach(todo => {
+            widgets.push(<Todo/>)
+        });
+        return widgets;
+    }
+
     render() { 
         return (
             <div className={styles.wrap}>
             <div className={styles.container}>
-                <Todo/>
-                <Todo/>
-                <Todo/>
-                <Todo/>
+                this.getAllTodos
             </div>
             </div>
         );

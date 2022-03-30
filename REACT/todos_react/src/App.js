@@ -5,14 +5,34 @@ import TaskAdder from './Comps/TaskAdder';
 import Todo from './Comps/Todo';
 import TodoList from './Comps/TodoList';
 
-function App() {
-  return (
-    <div className="App">
-      <Header/>
-      <TaskAdder/>
-      <TodoList/>
-    </div>
-  );
+class App extends Component {
+
+constructor(props){
+  super(props);
+  this.state = {
+    todos :[{
+      "id":1,
+      "name": "einkaufen",
+      "done": false
+    },
+    {
+      "id":2,
+      "name": "stehlen",
+      "done": false
+    },
+    ]
+  }
 }
 
+  render() { 
+    return (
+      <div className="App">
+        <Header/>
+        <TaskAdder/>
+        <TodoList tasks ={this.state.todos}/>
+      </div>
+    );
+  }
+}
+ 
 export default App;
