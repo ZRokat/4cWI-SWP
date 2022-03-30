@@ -7,6 +7,10 @@ export default class Counter extends Component {
         this.state = {count:0}
     }
 
+    componentDidMount(){
+        console.log("Started")
+    }
+
     increase = () =>{
         this.setState ({
             count: this.state.count + 1
