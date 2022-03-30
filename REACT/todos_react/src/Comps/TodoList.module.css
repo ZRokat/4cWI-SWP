@@ -1,0 +1,11 @@
+.container{
+    width: 50%;
+    
+}
+
+.wrap{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    
+}
