@@ -8,7 +8,9 @@ class Todo extends Component {
     render(){
         return(
             <div className={styles.container}>
-                <div>Einkaufen</div>
+                <div>{this.props.idNum}</div>
+                <div>{this.props.title}</div>
+                <div>{this.props.isDone}</div>
                 <div><IoBonfireOutline className={styles.icon}/></div>
             </div>
         );

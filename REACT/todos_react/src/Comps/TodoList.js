@@ -7,7 +7,7 @@ class TodoList extends Component {
     getAllTodos(){
         let widgets = [];
         this.props.todos.forEach(todo => {
-            widgets.push(<Todo/>)
+            widgets.push(<Todo idNum={todo.id} title={todo.name} isDone = {todo.done}/>)
         });
         return widgets;
     }
@@ -16,7 +16,7 @@ class TodoList extends Component {
         return (
             <div className={styles.wrap}>
             <div className={styles.container}>
-                this.getAllTodos
+                {this.getAllTodos()}
             </div>
             </div>
         );

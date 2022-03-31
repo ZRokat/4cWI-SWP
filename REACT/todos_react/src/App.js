@@ -1,35 +1,43 @@
-import logo from './logo.svg';
 import './App.css';
 import Header from './Comps/Header';
 import TaskAdder from './Comps/TaskAdder';
-import Todo from './Comps/Todo';
 import TodoList from './Comps/TodoList';
+import React, { Component } from 'react';
+
+
 
 class App extends Component {
 
 constructor(props){
   super(props);
   this.state = {
-    todos :[{
-      "id":1,
-      "name": "einkaufen",
-      "done": false
-    },
-    {
-      "id":2,
-      "name": "stehlen",
-      "done": false
-    },
+    
+    todos :[
+
     ]
   }
+}
+
+addTask = (idNum,value) =>{
+  let todo = {
+    id: idNum,
+    name: value,
+    done:false,
+  }
+  let todos = this.state.todos;
+  todos.push(todo);
+
+  this.setState({
+    todos : todos
+  })
 }
 
   render() { 
     return (
       <div className="App">
         <Header/>
-        <TaskAdder/>
-        <TodoList tasks ={this.state.todos}/>
+        <TaskAdder onTaskAdded={this.addTask}/>
+        <TodoList todos ={this.state.todos}/>
       </div>
     );
   }
